@@ -1,6 +1,6 @@
-import "./style.css";
-import logoCubos from "../../assets/logo-cubos.svg";
 import { Link } from "react-router-dom";
+import logoCubos from "../../assets/logo-cubos.svg";
+import "./style.css";
 
 export default function SignIn() {
   return (

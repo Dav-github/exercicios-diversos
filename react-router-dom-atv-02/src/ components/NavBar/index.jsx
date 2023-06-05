@@ -1,7 +1,7 @@
-import "./style.css";
-import logoCubos from "../../assets/logo-cubos.svg";
+import { Link, useNavigate } from "react-router-dom";
 import backArrow from "../../assets/arrow-back.svg";
-import { useNavigate, Link } from "react-router-dom";
+import logoCubos from "../../assets/logo-cubos.svg";
+import "./style.css";
 
 export default function NavBar({ booleanArrow, setProfessorAtual }) {
   const navigate = useNavigate();

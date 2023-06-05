@@ -1,10 +1,10 @@
-import "./style.css";
-import NavBar from "../../ components/NavBar";
-import { teachers } from "../../data";
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Card1 from "../../ components/Card1";
 import Card2 from "../../ components/Card2";
-import { useParams, useNavigate } from "react-router-dom";
+import NavBar from "../../ components/NavBar";
+import { teachers } from "../../data";
+import "./style.css";
 
 export default function Dashboard() {
   const [professores, setProfessores] = useState(teachers);
