@@ -1,0 +1,27 @@
+.card1 {
+  width: 200px;
+  height: 260px;
+  background-color: #da0175;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.card1 img {
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 16px;
+}
+
+.card1 span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+}

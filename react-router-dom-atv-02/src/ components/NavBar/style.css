@@ -1,0 +1,19 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 72px;
+  position: relative;
+}
+.arrow-img {
+  position: fixed;
+  left: 32px;
+  cursor: pointer;
+}
+.container-sair p {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  color: white;
+}

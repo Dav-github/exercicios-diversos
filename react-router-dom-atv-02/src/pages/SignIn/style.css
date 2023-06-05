@@ -1,0 +1,62 @@
+.container-sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 494px;
+  height: 475px;
+  background-color: #44444d;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form img {
+  width: 155px;
+  height: 67.89px;
+}
+.div-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+input {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 300px;
+  height: 48px;
+  background: #2e2e36;
+  margin-bottom: 16px;
+  color: white;
+  cursor: text;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.box-sign-in {
+  width: 300px;
+}
+.p-sign-in {
+  color: white;
+  margin-bottom: 60px;
+}
+.btn {
+  all: unset;
+  width: 300px;
+  height: 48px;
+  background-color: #da0175;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.012);
+}

@@ -1,0 +1,48 @@
+.container-card2 {
+  width: 467.18px;
+  height: 562px;
+  background: #da0175;
+  border-radius: 16px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 54px;
+}
+.container-card2 img {
+  width: 177.31px;
+  height: 177.31px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 24px;
+}
+.span-name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 12px;
+}
+.span-stack {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 49px;
+}
+.line {
+  width: 336.12px;
+  border: 1px solid #bbbbbb;
+  margin-bottom: 16px;
+}
+.bio {
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  margin-bottom: 24px;
+}
+.sobre {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  overflow: auto;
+}

@@ -1,0 +1,10 @@
+.container-card1 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
