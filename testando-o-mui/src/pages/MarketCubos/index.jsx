@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import NewAppBar from "../../components/NewAppbar";
 import "./styles.css";
 import Typography from "@mui/material/Typography";
@@ -24,6 +24,14 @@ export default function MarketCubos() {
                         <NewCard />
                         <NewCard />
                     </div>
+                    <Box
+                        sx={{
+                            width: "1228px",
+                            height: "2px",
+                            backgroundColor: "#BFBFBF",
+                            marginTop: "16px",
+                        }}
+                    ></Box>
                 </div>
             </section>
         </section>
