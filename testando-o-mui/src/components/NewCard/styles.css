@@ -1,0 +1,23 @@
+.newcard-span-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+.newcard-span-unidades {
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 266%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: rgba(101, 101, 101, 0.87);
+}
+.newcard-span-preco {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}

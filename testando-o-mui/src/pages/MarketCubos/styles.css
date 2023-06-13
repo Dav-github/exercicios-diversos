@@ -1,0 +1,14 @@
+.marketcubos-content {
+    padding: 100px 86px;
+    display: flex;
+}
+.marketcubos-line3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+.contained-cards {
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+}
