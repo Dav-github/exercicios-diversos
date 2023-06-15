@@ -1,7 +1,4 @@
-const color0 = "#ffffff";
-const color1 = "#D8EBEF";
-const color2 = "#3B657A";
-const color3 = "#123142";
+import { cor0, cor3 } from "./palletCollors";
 
 export const lineContent = {
     width: "1098px",
@@ -14,13 +11,13 @@ export const lineContent = {
     fontWeight: 700,
     fontSize: "32px",
     lineHeight: "38px",
-    color: color0,
+    color: cor0,
 };
 
 export const contentDashboard = {
     width: "1140px",
     height: "573px",
-    backgroundColor: color3,
+    backgroundColor: cor3,
     marginTop: "50px",
     borderRadius: "20px",
 };
