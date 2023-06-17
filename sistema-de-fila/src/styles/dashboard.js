@@ -1,42 +1,19 @@
 import { cor0, cor3 } from "./palletCollors";
 
-export const lineContent = {
-    width: "1098px",
-    height: "93px",
-    background: "#3B657A",
-    borderRadius: "12px",
+export const boxLine1 = {
+    width: "100vw",
+    padding: "0px 25px",
+    marginTop: "40px",
+    display: "flex",
+    justifyContent: "space-between",
+};
+
+export const boxLine1Btn = {
+    width: "365px",
+    height: "56px",
+    backgroundColor: "#C0E1F9",
+    borderRadius: "4px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontWeight: 700,
-    fontSize: "32px",
-    lineHeight: "38px",
-    color: cor0,
-};
-
-export const contentDashboard = {
-    width: "1140px",
-    height: "573px",
-    backgroundColor: cor3,
-    marginTop: "50px",
-    borderRadius: "20px",
-};
-
-export const line1 = {
-    ...lineContent,
-    marginTop: "32px",
-};
-
-export const alignBox = {
-    marginTop: "86px",
-    marginBottom: "40px",
-};
-
-export const alignNextBtn = {
-    width: "100%",
-    textAlign: "center",
-    marginTop: "102px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
 };

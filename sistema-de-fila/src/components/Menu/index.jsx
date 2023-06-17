@@ -1,4 +1,4 @@
-import { AppBar, IconButton } from "@mui/material";
+import { AppBar, IconButton, Typography } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { styles } from "../../styles";
@@ -22,7 +22,7 @@ export default function Menu({ visibilityDrawer, setVisibilityDrawer }) {
                 >
                     <MenuIcon />
                 </IconButton>
-                <h1>Menu</h1>
+                <Typography variant="h6">Menu</Typography>
             </AppBar>
         </>
     );
