@@ -1,9 +1,9 @@
-import express from "express";
+const express = require("express");
 const app = express();
+app.use(express.json());
 const port = 3000;
+const { router } = require("./router/router");
+app.use(router);
 
-app.get("/", (req, res) => {
-    res.send("hellow world!");
-});
-
+console.log(`conectado na porta ${port}`);
 app.listen(port);

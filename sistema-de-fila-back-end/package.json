@@ -1,6 +1,6 @@
 {
     "name": "sistema-de-fila-back-end",
-    "type": "module",
+    "type": "commonjs",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
