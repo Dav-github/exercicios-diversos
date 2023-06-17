@@ -1,7 +1,18 @@
+import { Box } from "@mui/material";
+import { styles } from "../../styles";
+import Menu from "../../components/Menu";
+import { useState } from "react";
+import MyDrawer from "../../components/MyDrawer";
+
 export default function RegisterForms() {
+    const [visibilityDrawer, setVisibilityDrawer] = useState(false);
     return (
-        <>
-            <h1>registerforms</h1>
-        </>
+        <Box sx={styles.layout.container}>
+            <Menu
+                visibilityDrawer={visibilityDrawer}
+                setVisibilityDrawer={setVisibilityDrawer}
+            />
+            <MyDrawer visibilityDrawer={visibilityDrawer} />
+        </Box>
     );
 }

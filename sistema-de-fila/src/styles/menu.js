@@ -8,4 +8,5 @@ export const container = {
     flexDirection: "row",
     padding: "12px 16px",
     alignItems: "center",
+    zIndex: "99",
 };
