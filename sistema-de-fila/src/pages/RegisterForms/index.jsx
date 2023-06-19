@@ -10,22 +10,26 @@ export default function RegisterForms() {
     const [registerFormValues, setRegisterFormValues] = useState({
         id_usuario: "",
         sala: "",
+        senha: "",
         exame: "",
     });
 
     async function handleSubmit(e) {
-        e.preventDefault();
         try {
-            const response = await api.post("/ficha", {
-                id_usuario: registerFormValues.id_usuario,
-                sala: registerFormValues.sala,
-                exame: registerFormValues.exame,
-            });
-
-            console.log(response.data);
+            if (
+                !registerFormValues.id_usuario ||
+                !registerFormValues.exame ||
+                !registerFormValues.sala
+            ) {
+                console.log("informe todos os campos");
+                return;
+            }
+            const response = await api.post("/ficha", registerFormValues);
+            return console.log(response);
         } catch (error) {
-            console.log(error);
+            return console.log(error);
         }
+        e.preventDefault();
     }
 
     const handleInputChange = (e) => {
@@ -65,7 +69,7 @@ export default function RegisterForms() {
                         alignItems: "center",
                         backgroundColor: "#ffffff",
                         width: "300px",
-                        height: "290px",
+                        height: "370px",
                         borderRadius: "4px",
                     }}
                     component={"form"}
@@ -82,6 +86,14 @@ export default function RegisterForms() {
                         name="sala"
                         label="Sala"
                         value={registerFormValues.sala}
+                        onChange={handleInputChange}
+                        margin="normal"
+                        sx={{ width: "256px" }}
+                    />
+                    <TextField
+                        name="senha"
+                        label="Senha"
+                        value={registerFormValues.senha}
                         onChange={handleInputChange}
                         margin="normal"
                         sx={{ width: "256px" }}

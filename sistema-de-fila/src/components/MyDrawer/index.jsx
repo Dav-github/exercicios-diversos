@@ -6,7 +6,7 @@ export default function MyDrawer({ visibilityDrawer }) {
     return (
         <Box>
             <Drawer
-                sx={{ zIndex: 0 }}
+                sx={{ zIndex: 98 }}
                 variant="temporary"
                 anchor="left"
                 open={visibilityDrawer}
@@ -29,6 +29,14 @@ export default function MyDrawer({ visibilityDrawer }) {
                             <ListItemText
                                 sx={styles.typography.listDrawer}
                                 primary="Criar Ficha"
+                            />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={"/listar-clientes"}>
+                        <ListItemButton>
+                            <ListItemText
+                                sx={styles.typography.listDrawer}
+                                primary="Listar Clientes"
                             />
                         </ListItemButton>
                     </Link>

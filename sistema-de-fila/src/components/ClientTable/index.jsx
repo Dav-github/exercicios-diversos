@@ -7,19 +7,25 @@ import {
     TableHead,
     TableRow,
 } from "@mui/material";
-
-function createData(sala, senha) {
-    return { sala, senha };
-}
-
-const rows = [
-    createData("001", "A001"),
-    createData("001", "A002"),
-    createData("001", "A003"),
-    createData("001", "A004"),
-];
+import { api } from "../../api/connection";
+import { useEffect, useState } from "react";
 
 export default function ClientTable() {
+    const [rows, setRows] = useState([]);
+
+    function createData(sala, senha) {
+        return { sala, senha };
+    }
+
+    async function getPacientsEnd() {
+        const { data } = await api.get("/finalizados");
+        setRows(data);
+    }
+
+    useEffect(() => {
+        getPacientsEnd();
+    }, []);
+
     return (
         <TableContainer sx={{ width: "350px" }} component={Paper}>
             <Table>
