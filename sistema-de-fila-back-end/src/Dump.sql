@@ -12,6 +12,7 @@ CREATE TABLE "ficha" (
   id_usuario INTEGER REFERENCES clientes(id),
   sala varchar(10) NOT NULL,
   exame TEXT NOT NULL,
+  senha text NOT NULL,
   andamento TEXT DEFAULT 'fila'
 );
 
