@@ -5,6 +5,7 @@ const anothersAux = async (req, res) => {
         const cadastros = await knex("cadastro")
             .select("email")
             .groupBy("email")
+            .count()
             .debug();
         return res.json(cadastros);
     } catch (error) {
