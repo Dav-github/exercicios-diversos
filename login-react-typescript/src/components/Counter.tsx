@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function Counter({ title, initialValue }: Props) {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState<number>(0);
 
     return (
         <Box
