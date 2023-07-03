@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Counter from "../components/Counter";
+import Todo from "../components/Todo";
 
 export default function App() {
     return (
@@ -13,8 +13,7 @@ export default function App() {
                 gap: "16px",
             }}
         >
-            <Counter title="Contador 1"></Counter>
-            <Counter title="Contador 2" initialValue={12}></Counter>
+            <Todo></Todo>
         </Box>
     );
 }
