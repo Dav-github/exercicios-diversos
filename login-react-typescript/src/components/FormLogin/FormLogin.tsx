@@ -1,24 +1,3 @@
-// import { Box } from "@mui/material";
-
-// export default function FormLogin() {
-//     return (
-//         <Box
-// sx={{
-//     backgroundColor: "#44444D",
-//     width: "494px",
-//     height: "475px",
-//     display: "flex",
-//     flexDirection: "column",
-//     alignItems: "center",
-//     padding: "32px 97px",
-// }}
-//             component={'form'}
-//         >
-//         </Box>
-//     );
-// }
-
-//-----------------
 import React, { useState } from "react";
 import {
     Box,
@@ -28,9 +7,10 @@ import {
     ThemeProvider,
     Typography,
 } from "@mui/material";
-import imgCubosLogo from "../assets/logoCubos.svg";
-import axios from "../services/axios";
-import { textField } from "../styles/formLogin";
+import imgCubosLogo from "../../assets/logoCubos.svg";
+import axios from "../../services/axios";
+import { textField } from "../../styles/formLogin";
+import UseAuth from "../../hooks/UseAuth";
 
 const theme = createTheme({
     palette: {
@@ -43,6 +23,7 @@ const theme = createTheme({
 const FormLogin = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const { saveToken } = UseAuth();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -52,7 +33,7 @@ const FormLogin = () => {
                 email,
                 password,
             });
-            console.log(response); // Exemplo de como lidar com a resposta do servidor
+            saveToken(response.data.accessToken);
         } catch (error) {
             console.error(error);
         }
