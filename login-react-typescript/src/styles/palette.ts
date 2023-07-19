@@ -3,6 +3,8 @@ export type Palette = {
     box: string;
     primary: string;
     secundary: string;
+    btnHover: string;
+    textColor: string;
 };
 
 export const palette: Palette = {
@@ -10,4 +12,6 @@ export const palette: Palette = {
     secundary: "#2E2E36",
     box: "#44444D",
     border: "#FCFCFC",
+    btnHover: "#da0175a7",
+    textColor: "#fff",
 };
